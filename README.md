@@ -4,7 +4,7 @@
 
 Submitted by: **Emily Park**
 
-Time spent: **3** hours spent in total
+Time spent: **4** hours spent in total
 
 ## User Stories
 
@@ -16,27 +16,23 @@ The following **required** functionality is completed:
 
 The following **stretch** features are implemented:
 
-* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
-
-The following **additional** features are implemented:
-
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![App Demo Link](screenshots/walkthrough.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Interesting issue arose when attempting to add a constraint from a text box to a button, causing the textbox to shrink and appear as if its width was 0 dp. The layout alignment for the button was set to "match parent"; however, the margins were also set, so the button appeared normal, although the button was technically aligned with the edge of the screen. Thus, the textbox was actually constrained to the edge of the screen, causing the issue. Removing the alignment property on the button fixed the issue.
 
 ## License
 
-    Copyright [year] [name of copyright owner]
+    Copyright 2020 Emily Park
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
